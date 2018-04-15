@@ -29,7 +29,36 @@ with PHP 7 because I never used NodeJS before, I'll stick on JavaScript and acqu
 Here will be listed all sources that as been seem/read to make technical decision and what as been chosen/extracted from
 sources.
 
-### Next subject: ORM or not
+### Subject to define later : Data Access Layer choice
+
+- http://jayurbain.com/msoe/se380/slides/swarch-dao-patterns.pdf
+    - [details on these patterns](https://softwareengineering.stackexchange.com/questions/205462/fowlers-data-access-layer-patterns)
+
+### Next subject: Interface Layer choice
+
+### Next subject: Message-based Interface Layer choice (RESTful API Framework)
+
+### Next subject: Business Layer choice
+
+### 2018-04-15: Layers Architecture
+
+My current knowledge on database access is through an Access Layer like DAO which I already used in a project and ORM
+which I didn't use it yet. I searched for the best way to access the database, globally and for the JavaScript/NodeJS. I
+found that it's better to build the Business Layer first and then exploit it to see if it's reliable before starting to
+create the database itself. Beside the choice of the Data Access Layer, it showed that we need to create an abstraction
+level between Business Layer and Data Access Layer to reduce dependencies. We will implement the architecture as follow
+using a top-down interaction approach :
+
+- Message-based Interface Layer (RESTful API)
+- Business Layer
+- Interface Layer (Abstract interface, Common design type, Dependency inversion)
+- Data Access Layer (ORM, DAO, ...)
+- Database (MySQL)
+
+Sources:
+
+- http://blog.gauffin.org/2013/01/data-layer-the-right-way/
+- https://msdn.microsoft.com/en-us/library/ee658116.aspx
 
 ### 2018-04-01: Data Model choice
 
