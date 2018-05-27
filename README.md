@@ -55,9 +55,9 @@ business rules and business entities. They will communicate through a Chain of R
 will follow the Saga pattern.
 
 Sources :
+- https://msdn.microsoft.com/en-us/library/ee658103.aspx
 - https://dzone.com/articles/saga-pattern-how-to-implement-business-transaction
 - https://dzone.com/articles/saga-pattern-how-to-implement-business-transaction-1
-- https://msdn.microsoft.com/en-us/library/ee658103.aspx
 
 ### 2018-04-15: Layers Architecture
 
