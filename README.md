@@ -33,12 +33,31 @@ sources.
 
 - http://jayurbain.com/msoe/se380/slides/swarch-dao-patterns.pdf
     - [details on these patterns](https://softwareengineering.stackexchange.com/questions/205462/fowlers-data-access-layer-patterns)
-
-### Next subject: Interface Layer choice
+- https://msdn.microsoft.com/en-us/library/ee658127.aspx
 
 ### Next subject: Message-based Interface Layer choice (RESTful API Framework)
 
-### Next subject: Business Layer choice
+Possibles sources:
+
+- http://restify.com/docs/home/
+- https://strongloop.com/strongblog/compare-express-restify-hapi-loopback/
+- https://stackoverflow.com/questions/49701400/loopback-or-restify
+- https://npmcompare.com/compare/express,loopback,restify,swagger-express,swagger-express-mw
+- https://npmcompare.com/compare/loopback,node-rest-client,rest,restify,sails
+- https://nodejs.libhunt.com/compare-node-restify-vs-loopback
+- https://favsub.com/bookmarks/edit/18086-strongloop-comparing-express-restify-hapi-and-loopback-for-building-restful-apis
+
+### 2018-05-27: Business Layer choice
+
+The Business Layer is the core of the application, it'll be accessed through the Message-based Interface and will update
+send work to the Data Access Layer. To get a full business layer, it will be split into 3 parts: business workflow,
+business rules and business entities. They will communicate through a Chain of Responsibility. The business workflow
+will follow the Saga pattern.
+
+Sources :
+- https://dzone.com/articles/saga-pattern-how-to-implement-business-transaction
+- https://dzone.com/articles/saga-pattern-how-to-implement-business-transaction-1
+- https://msdn.microsoft.com/en-us/library/ee658103.aspx
 
 ### 2018-04-15: Layers Architecture
 
@@ -59,6 +78,7 @@ Sources:
 
 - http://blog.gauffin.org/2013/01/data-layer-the-right-way/
 - https://msdn.microsoft.com/en-us/library/ee658116.aspx
+- https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/
 
 ### 2018-04-01: Data Model choice
 
