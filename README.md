@@ -35,9 +35,27 @@ sources.
     - [details on these patterns](https://softwareengineering.stackexchange.com/questions/205462/fowlers-data-access-layer-patterns)
 - https://msdn.microsoft.com/en-us/library/ee658127.aspx
 
-### Next subject: Message-based Interface Layer choice (RESTful API Framework)
+### Next subject: Message-based Interface Layer choice (GraphQL Implementation)
 
-Possibles sources:
+Possible sources :
+
+- https://graphql.org/
+- https://medium.com/codingthesmartway-com-blog/creating-a-graphql-server-with-node-js-and-express-f6dddc5320e1
+- https://www.arangodb.com/
+
+### 2018-06-25: Message-based Interface Layer choice (RESTful API Framework)
+
+I was looking for building a RESTful API, but was wondering which framework was better to do so. LoopBack 4 was pretty
+interesting but as for now it's on developer release and there is too much documentation missing for starting with it.
+I looked for ExpressJS and Restify, Restify looking better because it doesn't include useless feature for my case but
+as cons it look like it perform less than ExpressJS... So I decided to start with all of them (ExpressJS, Restify, 
+LoopBack 3, LoopBack 4) side by side, and since I'm doing layering they should all access to the same business, forcing
+me to decouple my business from the interface at the same time.
+
+But a friend said to me that there was something better than RESful API nowaday, I searched a bit and found GraphQL,
+Which look to fit my project perfectly, I'll look on it and it ecosystem (ArangoDB ?) before continue on RESTful API
+
+Sources:
 
 - http://restify.com/docs/home/
 - https://strongloop.com/strongblog/compare-express-restify-hapi-loopback/
@@ -46,6 +64,8 @@ Possibles sources:
 - https://npmcompare.com/compare/loopback,node-rest-client,rest,restify,sails
 - https://nodejs.libhunt.com/compare-node-restify-vs-loopback
 - https://favsub.com/bookmarks/edit/18086-strongloop-comparing-express-restify-hapi-and-loopback-for-building-restful-apis
+
+- https://medium.freecodecamp.org/rest-apis-are-rest-in-peace-apis-long-live-graphql-d412e559d8e4
 
 ### 2018-05-27: Business Layer choice
 
