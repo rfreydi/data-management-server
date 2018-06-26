@@ -39,9 +39,16 @@ sources.
 
 Possible sources :
 
-- https://graphql.org/
 - https://medium.com/codingthesmartway-com-blog/creating-a-graphql-server-with-node-js-and-express-f6dddc5320e1
+- https://graphql.org/
+- https://www.apollographql.com/
+- https://www.graph.cool/
 - https://www.arangodb.com/
+- https://marmelab.com/blog/2017/09/04/dive-into-graphql-part-i-what-s-wrong-with-rest.html
+- https://marmelab.com/blog/2017/09/05/dive-into-graphql-part-ii-anatomy-of-a-graphql-query.html
+- https://marmelab.com/blog/2017/09/06/dive-into-graphql-part-iii-building-a-graphql-server-with-nodejs.html
+- https://marmelab.com/blog/2017/09/07/dive-into-graphql-part-iv-building-a-graphql-client-with-reactjs.html
+- https://marmelab.com/blog/2017/09/08/dive-into-graphql-part-v-should-you-use-graphql.html
 
 ### 2018-06-25: Message-based Interface Layer choice (RESTful API Framework)
 
